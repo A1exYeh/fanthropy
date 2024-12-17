@@ -1,12 +1,24 @@
 import { useState, FormEvent } from 'react';
+import { useNavigate } from 'react-router';
 import { FaGoogle } from 'react-icons/fa';
 
 const LoginForm = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+
+  let navigate = useNavigate();
+
   const handleLogin = (e: React.FormEvent) => {
     e.preventDefault();
+    
+    if (!email || !password) {
+      alert("Enter valid values");
+      return;
+    }
+
     console.log('Form Submitted with: ', { email, password });
+    
+    navigate('/teams');
   };
 
   return (
