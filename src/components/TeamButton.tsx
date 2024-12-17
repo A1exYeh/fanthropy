@@ -12,10 +12,12 @@ const TeamButton : React.FC <TeamButtonProps> = ({onClick, imgSrc, label}) => {
     
     return (
         <>
-        <button onClick={onClick}>
+        <button onClick={onClick} className='bg-red-600 flex p-4 text-xl justify-center rounded-xl'>
             <img src={imgSrc} alt="" />
             {/* renders label div in for button if it's true */}
-            {label && <div>{label}</div>} 
+            {label && 
+            <div className='text-white'>{label}</div>
+            } 
         </button>
         </>
     )
