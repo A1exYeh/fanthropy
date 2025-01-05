@@ -12,7 +12,7 @@ const teams = [
 
 const TeamsPage : React.FC = () => {
     let navigate = useNavigate();
-    
+
     const handleTeamSelect = (team: string) => {
         console.log (`Team Selected: ${team}`);
         navigate('/orgs');
@@ -20,7 +20,7 @@ const TeamsPage : React.FC = () => {
 
     return (
         <>
-        <div className="flex flex-col justify-center items-center w-screen-sm gap-8 h-full">
+        <div className="flex flex-col justify-center items-center w-screen-sm gap-8 h-screen">
             {/* map through the teams array with destructured variables, return a TeamButton FC
                 for each element in teams.  */}
             {teams.map(({team, imgSrc, label, bgColor}) => (
