@@ -1,21 +1,19 @@
 import TeamButton from "../../components/TeamButton";
-import RaidersLogo from '../../assets/logo-raiders.svg';
+import ThreeSquareLogo from '../../assets/three-square-logo.png';
 import { useNavigate } from 'react-router';
 
-const teams = [
-    {team: 'Raiders', imgSrc: RaidersLogo, label: 'Raiders', bgColor: 'black' },
-    {team: 'Aces', imgSrc: RaidersLogo, label: 'Aces', bgColor: 'red' },
-    {team: 'Athletics', imgSrc: RaidersLogo, label: 'Athletics', bgColor: 'green' },
-    {team: 'Golden Knights', imgSrc: RaidersLogo, label: 'Golden Knights', bgColor: 'gold' }
+const organizations = [
+    {team: 'ThreeSquare', imgSrc: ThreeSquareLogo, label: 'ThreeSquare', bgColor: 'black' },
+    {team: 'ThreeSquare', imgSrc: ThreeSquareLogo, label: 'ThreeSquare', bgColor: 'red' },
+    {team: 'ThreeSquare', imgSrc: ThreeSquareLogo, label: 'ThreeSquare', bgColor: 'green' },
+    {team: 'ThreeSquare Knights', imgSrc: ThreeSquareLogo, label: 'ThreeSquare', bgColor: 'gold' }
 ];
 
-
-const TeamsPage : React.FC = () => {
+const OrgsPage : React.FC = () => {
     let navigate = useNavigate();
-    
     const handleTeamSelect = (team: string) => {
         console.log (`Team Selected: ${team}`);
-        navigate('/orgs');
+        navigate('/orgs/threesquare');
     }
 
     return (
@@ -23,7 +21,7 @@ const TeamsPage : React.FC = () => {
         <div className="flex flex-col justify-center items-center w-screen-sm gap-8 h-full">
             {/* map through the teams array with destructured variables, return a TeamButton FC
                 for each element in teams.  */}
-            {teams.map(({team, imgSrc, label, bgColor}) => (
+            {organizations.map(({team, imgSrc, label, bgColor}) => (
                 <TeamButton 
                 key = {team}
                 onClick = { () => handleTeamSelect(team)}
@@ -37,4 +35,4 @@ const TeamsPage : React.FC = () => {
     );
 };
 
-export default TeamsPage;
+export default OrgsPage;
