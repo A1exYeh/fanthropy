@@ -3,7 +3,7 @@ import ThreeSquareLogo from '../../../assets/three-square-logo.png';
 const ThreeSquare = () => {
     return (
         <>
-        <div className='flex flex-col justify-start items-center w-screen-sm gap-8 h-full py-16 px-8'>
+        <div className='flex flex-col mx-auto justify-center items-center max-w-screen-sm gap-8 h-full py-16 px-8'>
             <h1 className='text-4xl font-bold'>ThreeSquare</h1>
             <img src={ThreeSquareLogo} alt="ThreeSquare Logo" />
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut culpa aliquam aperiam nihil, tenetur voluptatum velit nobis id accusantium eveniet nulla reiciendis? Praesentium neque quidem tempore ullam sint. Officia sequi aliquid dolores eligendi consequatur minus?</p>
