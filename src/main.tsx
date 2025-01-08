@@ -11,11 +11,11 @@ import SlotPage from './components/SlotPage';
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <HashRouter>
-    <Routes>
-      <Route index element={<LoginPage />} />
-      <Route path='/' element={<LoginPage />} />
-      <Route path='/teams' element={<TeamsPage />} />
-      <Route path='/orgs' element={<OrgsPage />} />
+      <Routes>
+        <Route index element={<LoginPage />} />
+        <Route path='/' element={<LoginPage />} />
+        <Route path='/teams' element={<TeamsPage />} />
+        <Route path='/orgs' element={<OrgsPage />} />
         <Route path='/orgs/threesquare' element={<ThreeSquare />} />
         <Route path='/orgs/slotpage' element={<SlotPage />} />
       </Routes>

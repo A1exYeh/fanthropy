@@ -10,14 +10,14 @@ const LoginForm = () => {
 
   const handleLogin = (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     if (!email || !password) {
-      alert("Enter valid values");
+      alert('Enter valid values');
       return;
     }
 
     console.log('Form Submitted with: ', { email, password });
-    
+
     navigate('/teams');
   };
 
