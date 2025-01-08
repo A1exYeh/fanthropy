@@ -6,6 +6,7 @@ import LoginPage from './pages/LoginPage/LoginPage';
 import TeamsPage from './pages/TeamsPage/TeamsPage';
 import OrgsPage from './pages/OrgsPage/OrgsPage';
 import ThreeSquare from './pages/Organizations/ThreeSquare/ThreeSquare';
+import SlotPage from './components/SlotPage';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
@@ -16,6 +17,7 @@ createRoot(document.getElementById('root')!).render(
       <Route path='/teams' element={<TeamsPage />} />
       <Route path='/orgs' element={<OrgsPage />} />
         <Route path='/orgs/threesquare' element={<ThreeSquare />} />
+        <Route path='/orgs/slotpage' element={<SlotPage />} />
       </Routes>
     </HashRouter>
   </StrictMode>
