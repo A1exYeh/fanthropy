@@ -1,12 +1,11 @@
-import ThreeSquareLogo from '../assets/three-square-logo.png';
-
 const SlotPage = () => {
   return (
     <>
       <div className='mx-auto flex h-screen max-w-screen-sm flex-col items-center justify-start gap-8 px-8 py-16'>
         <h1 className='text-4xl font-bold'>ThreeSquare</h1>
-        <img src={ThreeSquareLogo} alt='ThreeSquare Logo' />
-        <h1 className='text-3xl font-bold'>VOLUNTEERING CONFIRMATION</h1>
+        <h1 className='text-center text-3xl font-bold'>
+          VOLUNTEERING CONFIRMATION
+        </h1>
         <h1 className='text-3xl font-bold'>7:00 AM - 10:00 AM</h1>
         <div className='flex w-fit items-center justify-center gap-2 rounded-lg bg-black p-2 text-2xl font-bold text-white'>
           <svg
@@ -26,10 +25,25 @@ const SlotPage = () => {
           magni excepturi adipisci. Consequuntur illo maxime mollitia quod
           libero, vitae non!
         </p>
-        <div className='flex w-full flex-col items-center justify-center gap-8 rounded-lg bg-gray-200 p-4'>
+        <div className='flex w-full flex-col items-center justify-center gap-4 rounded-lg bg-gray-200 p-4'>
           <button className='flex w-fit items-center justify-center rounded-lg bg-green-500 p-2'>
             <h1>CONFIRM</h1>
           </button>
+          <div className='flex h-4 flex-row items-center justify-center gap-2'>
+            <p className='text-[1rem]'>How do I get my points? </p>
+            <button>
+              <svg
+                xmlns='http://www.w3.org/2000/svg'
+                width='1rem'
+                height='1rem'
+                fill='currentColor'
+                viewBox='0 0 1rem 1rem'
+              >
+                <path d='M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16' />
+                <path d='m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0' />
+              </svg>
+            </button>
+          </div>
         </div>
       </div>
     </>
