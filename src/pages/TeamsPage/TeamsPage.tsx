@@ -1,20 +1,23 @@
 import TeamButton from '../../components/TeamButton';
 import RaidersLogo from '../../assets/logo-raiders.svg';
+import AcesLogo from '../../assets/logo-aces.svg';
+import AthleticsLogo from '../../assets/logo-athletics.svg';
+import GKnightsLogo from '../../assets/logo-gknights.svg';
 import { useNavigate } from 'react-router';
 
 const teams = [
-  { team: 'Raiders', imgSrc: RaidersLogo, label: 'Raiders', bgColor: 'black' },
-  { team: 'Aces', imgSrc: RaidersLogo, label: 'Aces', bgColor: 'red' },
+  { team: 'Raiders', imgSrc: RaidersLogo, label: '', bgColor: 'black' },
+  { team: 'Aces', imgSrc: AcesLogo, label: '', bgColor: 'silver' },
   {
     team: 'Athletics',
-    imgSrc: RaidersLogo,
-    label: 'Athletics',
+    imgSrc: AthleticsLogo,
+    label: '',
     bgColor: 'green',
   },
   {
     team: 'Golden Knights',
-    imgSrc: RaidersLogo,
-    label: 'Golden Knights',
+    imgSrc: GKnightsLogo,
+    label: '',
     bgColor: 'gold',
   },
 ];
@@ -29,7 +32,7 @@ const TeamsPage: React.FC = () => {
 
   return (
     <>
-      <div className='w-screen-sm flex h-screen flex-col items-center justify-center gap-8'>
+      <div className='flex h-full flex-col items-center justify-center gap-8'>
         {/* map through the teams array with destructured variables, return a TeamButton FC
                 for each element in teams.  */}
         {teams.map(({ team, imgSrc, label, bgColor }) => (
