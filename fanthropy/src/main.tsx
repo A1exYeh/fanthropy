@@ -1,17 +1,14 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-import { BrowserRouter } from "react-router-dom";
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
 
-import App from "./App.tsx";
-import { Provider } from "./provider.tsx";
-import "@/styles/globals.css";
+import "./styles/global.css";
+import { BrowserRouter } from "react-router";
+import { App } from "./App";
 
-ReactDOM.createRoot(document.getElementById("root")!).render(
-  <React.StrictMode>
+createRoot(document.getElementById("root")!).render(
+  <StrictMode>
     <BrowserRouter>
-      <Provider>
-        <App />
-      </Provider>
+      <App />
     </BrowserRouter>
-  </React.StrictMode>,
+  </StrictMode>,
 );
