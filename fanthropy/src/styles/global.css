@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary: "var(--color-primary)";
-  --color-text: "var(--color-text)";
+  --color-primary: var(--color-primary);
+  --color-text: var(--color-text);
 }
 
 [theme="dark"] {
@@ -10,7 +10,10 @@
   --color-text: white;
 }
 
-[theme="dark"] {
+[theme="light"] {
   --color-primary: white;
   --color-text: black;
 }
+
+/* THEME IDEAS:  */
+/* https://tints.dev/sky/86D5FF */

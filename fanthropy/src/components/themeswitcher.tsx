@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import "../styles/global.css";
+
 export const ThemeSwitcher = () => {
   const [theme, setTheme] = useState(() => {
     const localTheme = localStorage.getItem("theme");
@@ -22,9 +23,9 @@ export const ThemeSwitcher = () => {
         onClick={() => {
           theme == "dark" ? setTheme("light") : setTheme("dark");
         }}
-        className="cursor-pointer bg-red-500"
+        className="cursor-pointer bg-red-500 rounded-full w-8 h-8 flex items-center justify-center"
       >
-        {theme == "dark" ? "Dark" : "Light"}
+        {theme == "dark" ? "D" : "L"}
       </button>
     </>
   );
