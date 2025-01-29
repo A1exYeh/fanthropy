@@ -1,17 +1,37 @@
 @import "tailwindcss";
 
+html {
+  height: 100%;
+  margin: 0;
+}
+
 @theme {
   --color-primary: var(--color-primary);
   --color-text: var(--color-text);
+  --color-background: var(--color-background);
+}
+
+:root {
+  background: var(--color-background);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: var(--color-text);
 }
 
 [theme="dark"] {
   --color-primary: black;
+  --color-background: black;
   --color-text: white;
 }
 
 [theme="light"] {
   --color-primary: white;
+  --color-background: linear-gradient(
+    0deg,
+    rgba(184, 230, 255, 1) 0%,
+    rgba(229, 246, 255, 1) 100%
+  );
   --color-text: black;
 }
 

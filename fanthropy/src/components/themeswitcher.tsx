@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { MoonIcon, SunIcon } from "@heroicons/react/16/solid";
 import "../styles/global.css";
 
 export const ThemeSwitcher = () => {
@@ -23,9 +24,13 @@ export const ThemeSwitcher = () => {
         onClick={() => {
           theme == "dark" ? setTheme("light") : setTheme("dark");
         }}
-        className="cursor-pointer bg-red-500 rounded-full w-8 h-8 flex items-center justify-center"
+        className="cursor-pointer text-text flex items-center justify-center"
       >
-        {theme == "dark" ? "D" : "L"}
+        {theme == "dark" ? (
+          <MoonIcon className="w-6 h-6" />
+        ) : (
+          <SunIcon className="w-6 h-6" />
+        )}
       </button>
     </>
   );
