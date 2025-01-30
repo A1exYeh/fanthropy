@@ -8,7 +8,7 @@ export const PageLayout = () => {
       <header>
         <Navbar />
       </header>
-      <main className="mt-16 min-h-screen">
+      <main className="pt-24 min-h-screen bg-background">
         <Outlet />
       </main>
       <footer className="bg-black">FOOTER</footer>

@@ -21,13 +21,13 @@ html {
 
 [theme="dark"] {
   --color-primary: black;
-  --color-background: #07162C;
+  --color-background: linear-gradient(to left top, #010612, #030a19, #050d1f, #071026, #07122c, #071635, #081a3e, #0a1e47, #0d2556, #102c65, #143375, #193a85);
   --color-text: white;
 }
 
 [theme="light"] {
   --color-primary: white;
-  --color-background: #6B9EE6;
+  --color-background: linear-gradient(to left top, #86aaff, #8baeff, #8fb1ff, #94b5ff, #99b8ff, #9ebbff, #a3bfff, #a8c2ff, #aec7ff, #b4cbff, #bbd0ff, #c1d4ff);
   --color-text: black;
 }
 
