@@ -21,23 +21,15 @@ html {
 
 [theme="dark"] {
   --color-primary: black;
-  --color-background: linear-gradient(
-    0deg,
-    rgba(0, 50, 77, 1) 0%,
-    rgba(0, 103, 158, 1) 100%
-  );
+  --color-background: #07162C;
   --color-text: white;
 }
 
 [theme="light"] {
   --color-primary: white;
-  --color-background: linear-gradient(
-    0deg,
-    rgba(184, 230, 255, 1) 0%,
-    rgba(229, 246, 255, 1) 100%
-  );
+  --color-background: #6B9EE6;
   --color-text: black;
 }
 
 /* THEME IDEAS:  */
-/* https://tints.dev/sky/86D5FF */
+/* https://www.tints.dev/sky/0C2446 */
