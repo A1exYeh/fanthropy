@@ -24,7 +24,7 @@ export const ThemeSwitcher = () => {
         onClick={() => {
           theme == "dark" ? setTheme("light") : setTheme("dark");
         }}
-        className="cursor-pointer text-text flex items-center justify-center"
+        className="cursor-pointer flex items-center justify-center"
       >
         {theme == "dark" ? (
           <MoonIcon className="w-6 h-6" />
