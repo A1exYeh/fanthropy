@@ -1,7 +1,7 @@
 export const Footer = () => {
    return (
       <>
-      <div className="w-full h-fit min-h-64 p-4 flex flex-row justify-evenly items-start">
+      <div className="w-full h-fit min-h-32 p-4 flex flex-row justify-evenly items-start">
          <div> 
             <ul>
                <li>HOME</li>
