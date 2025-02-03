@@ -1,5 +1,6 @@
 import { Outlet } from "react-router";
 import { Navbar } from "../components/navbar";
+import { Footer } from "../components/footer";
 import "../styles/global.css";
 
 export const PageLayout = () => {
@@ -11,7 +12,9 @@ export const PageLayout = () => {
       <main className="pt-24 min-h-screen h-fit bg-background">
         <Outlet />
       </main>
-      <footer className="bg-black">FOOTER</footer>
+      <footer className="bg-black">
+        <Footer/>
+      </footer>
     </>
   );
 };
