@@ -12,7 +12,7 @@ export const PageLayout = () => {
       <main className="pt-24 min-h-screen h-fit bg-background">
         <Outlet />
       </main>
-      <footer className="bg-black">
+      <footer>
         <Footer/>
       </footer>
     </>
