@@ -9,7 +9,7 @@ export const PageLayout = () => {
       <header>
         <Navbar />
       </header>
-      <main className="pt-24 min-h-screen h-fit bg-background">
+      <main className="pt-24 w-full min-h-screen h-fit bg-background">
         <Outlet />
       </main>
       <footer>

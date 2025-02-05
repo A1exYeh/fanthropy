@@ -1,6 +1,6 @@
 import Logo from '../assets/logo.png'
 
-export const Index = () => {
+export const FAQ = () => {
   return (
     <>
     {/* Hero */}
@@ -18,10 +18,10 @@ export const Index = () => {
 
       {/* Steps */}
       <section className="bg-background min-h-[50vh] h-fit flex justify-center items-center drop-shadow-md px-24 py-32">
-        <div className="flex flex-col justify-start items-center w-full h-full px-8 gap-12 flex-wrap">
+        <div className="flex flex-col justify-start items-center w-full h-full px-8 gap-12 ">
           
           <h1 className='text-4xl font-semibold'>How It Works</h1>
-          <div className='flex flex-row justify-center items-start gap-8 overflow-auto flex-wrap'>
+          <div className='flex flex-row justify-center items-start gap-8 '>
 
             <div className='p-4 rounded-xl bg-text/15 font-medium flex-1 hover:scale-110 ease-in-out transition-all'>
               <h2 className='text-2xl font-semibold pb-4'>STEP 1</h2>
