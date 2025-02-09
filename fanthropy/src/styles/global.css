@@ -34,13 +34,27 @@ html {
 
 [theme="dark"] {
   --color-primary: #0c121c;
-  --color-background:   linear-gradient(to right top, #0c121c, #0b1320, #0a1424, #091528, #07162c);
+  --color-background: linear-gradient(
+    to right top,
+    #0c121c,
+    #0b1320,
+    #0a1424,
+    #091528,
+    #07162c
+  );
   --color-text: white;
 }
 
 [theme="light"] {
   --color-primary: #cad2e0;
-  --color-background:  linear-gradient(to right top, #cad2e0, #d3dae8, #dbe3ef, #e4ebf7, #edf4ff);
+  --color-background: linear-gradient(
+    to right top,
+    #cad2e0,
+    #d3dae8,
+    #dbe3ef,
+    #e4ebf7,
+    #edf4ff
+  );
   --color-text: black;
 }
 

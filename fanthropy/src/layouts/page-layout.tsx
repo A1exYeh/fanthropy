@@ -13,7 +13,7 @@ export const PageLayout = () => {
         <Outlet />
       </main>
       <footer>
-        <Footer/>
+        <Footer />
       </footer>
     </>
   );
