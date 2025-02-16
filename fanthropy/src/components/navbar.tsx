@@ -31,7 +31,7 @@ export const Navbar = () => {
             </button>
           </div>
         ) : (
-          <div className="w-full text-sm max-w-screen-xl flex flex-col items-center justify-end gap-6 font-medium flex-wrap">
+          <div className="w-full text-sm max-w-screen-xl flex flex-col items-center justify-end pb-8 gap-6 font-medium flex-wrap">
             <a href="/" className="mr-auto h-24 w-24">
               <img src={Logo} alt="Logo" />
             </a>
