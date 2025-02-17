@@ -1,7 +1,7 @@
 import Logo from "../assets/logo.png";
 import { Bars3Icon } from "@heroicons/react/24/outline";
 import { useState } from "react";
-import { ThemeSwitcher } from "./themeswitcher";
+import { Link } from "react-router";
 export const Navbar = () => {
   const [stackOpen, setStackOpen] = useState(false);
 
@@ -15,10 +15,9 @@ export const Navbar = () => {
             </a>
             <div className="hidden md:flex flex-row items-center justify-end gap-6 px-4">
               <a href="/about">ABOUT</a>
-              <a href="">FAQ</a>
-              <ThemeSwitcher />
+              {/* <ThemeSwitcher /> */}
               <button className="p-2 bg-yellow-500 font-bold cursor-pointer rounded-xl">
-                DEMO
+                <a href="https://www.canva.com/design/DAGfY1k2nes/VwNQskkZhlUsbALFzODImw/view?mode=prototype" target="_blank" rel="noreferrer nopener">DEMO</a>
               </button>
             </div>
             <button
@@ -32,12 +31,12 @@ export const Navbar = () => {
           </div>
         ) : (
           <div className="w-full text-sm max-w-screen-xl flex flex-col items-center justify-end pb-8 gap-6 font-medium flex-wrap">
-            <a href="/" className="mr-auto h-24 w-24">
+            <Link to="/" className="mr-auto h-24 w-24">
               <img src={Logo} alt="Logo" />
-            </a>
-            <a href="/about">ABOUT</a>
+            </Link>
+            <Link to="/about">About</Link>
             <a href="">FAQ</a>
-            <ThemeSwitcher />
+            {/* <ThemeSwitcher /> */}
             <button className="p-2 bg-yellow-500 font-bold cursor-pointer rounded-xl">
               DEMO
             </button>

@@ -17,7 +17,7 @@ export const About = () => {
       </section>
 
       {/* Story */}
-      <section className="bg-background min-h-[50vh] h-fit flex flex-col justify-center items-center drop-shadow-md py-16">
+      <section className="bg-background min-h-[50vh] h-fit flex flex-col justify-center items-center drop-shadow-md py-64">
         <h1 className="text-5xl font-bold mx-auto pb-32">Our Story</h1>
         <div className="flex flex-row justify-evenly items-center w-full h-full px-0 md:w-3/4 md:px-0 gap-12 flex-wrap md:flex-nowrap">
           {/* STORY COL */}
@@ -39,35 +39,38 @@ export const About = () => {
 
           {/* STORY IMAGE */}
           <div className="flex flex-col justify-center items-center gap-6 w-1/2">
+            
+            <a href="https://www.unlv.edu/president/initiatives/presidents-innovation-challenge" target="_blank" rel="noopener norefferer">
             <img src={UNLV_Logo} alt="UNLV LOGO" />
+            </a>
           </div>
         </div>
       </section>
 
       {/* Headshots */}
-      <section className="bg-primary min-h-[50vh] h-fit flex flex-col justify-center items-center drop-shadow-md py-16">
+      <section className="bg-primary min-h-[50vh] h-fit flex flex-col justify-center items-center drop-shadow-md py-64">
       <h1 className="text-5xl font-bold mx-auto pb-32">The Team</h1>
-        <div className="flex flex-row items-center justify-center px-12 w-full flex-wrap md:flex-nowrap md:max-w-3/4 gap-8">
+        <div className="flex flex-row items-center justify-center px-12 pb-32 w-full flex-wrap md:flex-nowrap md:max-w-3/4 gap-8">
           {/* Profile Card */}
-          <div className="p-8 rounded-lg bg-red-500 flex flex-col justify-center items-center gap-4">
+          <div className="p-8 rounded-lg bg-red-500 flex flex-col justify-center items-center gap-4 hover:scale-105 transition-all ease-in-out">
             <h3 className="text-2xl font-bold">First Last</h3>
             <img src={Vite} alt=""  className="rounded-full w-32 h-32 bg-green-400 p-4"/>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam laborum doloribus quod nostrum asperiores vel cumque necessitatibus! Asperiores ab blanditiis velit quam voluptatum quas, iusto, voluptatem repellendus maiores illum dolor!</p>
           </div>
           {/* Profile Card */}
-          <div className="p-8 rounded-lg bg-red-500 flex flex-col justify-center items-center gap-4">
+          <div className="p-8 rounded-lg bg-red-500 flex flex-col justify-center items-center gap-4 hover:scale-105 transition-all ease-in-out">
             <h3 className="text-2xl font-bold">First Last</h3>
             <img src={Vite} alt=""  className="rounded-full w-32 h-32 bg-green-400 p-4"/>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam laborum doloribus quod nostrum asperiores vel cumque necessitatibus! Asperiores ab blanditiis velit quam voluptatum quas, iusto, voluptatem repellendus maiores illum dolor!</p>
           </div>
           {/* Profile Card */}
-          <div className="p-8 rounded-lg bg-red-500 flex flex-col justify-center items-center gap-4">
+          <div className="p-8 rounded-lg bg-red-500 flex flex-col justify-center items-center gap-4 hover:scale-105 transition-all ease-in-out">
             <h3 className="text-2xl font-bold">First Last</h3>
             <img src={Vite} alt=""  className="rounded-full w-32 h-32 bg-green-400 p-4"/>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam laborum doloribus quod nostrum asperiores vel cumque necessitatibus! Asperiores ab blanditiis velit quam voluptatum quas, iusto, voluptatem repellendus maiores illum dolor!</p>
           </div>
           {/* Profile Card */}
-          <div className="p-8 rounded-lg bg-red-500 flex flex-col justify-center items-center gap-4">
+          <div className="p-8 rounded-lg bg-red-500 flex flex-col justify-center items-center gap-4 hover:scale-105 transition-all ease-in-out">
             <h3 className="text-2xl font-bold">First Last</h3>
             <img src={Vite} alt=""  className="rounded-full w-32 h-32 bg-green-400 p-4"/>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam laborum doloribus quod nostrum asperiores vel cumque necessitatibus! Asperiores ab blanditiis velit quam voluptatum quas, iusto, voluptatem repellendus maiores illum dolor!</p>

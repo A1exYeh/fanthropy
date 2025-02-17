@@ -1,62 +1,74 @@
-@import "tailwindcss";
+  @import "tailwindcss";
 
-@font-face {
-  font-family: Montserrat;
-  src: url("../assets/Montserrat.ttf");
-}
+  @font-face {
+    font-family: Montserrat;
+    src: url("../assets/Montserrat.ttf");
+  }
 
-html {
-  height: fit-content;
-  margin: 0;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
-}
+  html {
+    height: fit-content;
+    margin: 0;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
 
-::-webkit-scrollbar {
-  display: none;
-}
+  ::-webkit-scrollbar {
+    display: none;
+  }
 
-@theme {
-  --color-primary: var(--color-primary);
-  --color-text: var(--color-text);
-  --color-background: var(--color-background);
-  --font-montserrat: "Montserrat", "ui-sans-serif";
-}
+  @theme {
+    --color-primary: var(--color-primary);
+    --color-text: var(--color-text);
+    --color-background: var(--color-background);
+    --font-montserrat: "Montserrat", "ui-sans-serif";
+  }
 
-:root {
-  background-image: var(--color-background);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  color: var(--color-text);
-  font-family: "Montserrat";
-}
+  :root {
+    background-image: var(--color-background);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: var(--color-text);
+    font-family: "Montserrat";
+  }
 
-[theme="dark"] {
-  --color-primary: #0c121c;
-  --color-background: linear-gradient(
-    to right top,
-    #0c121c,
-    #0b1320,
-    #0a1424,
-    #091528,
-    #07162c
-  );
-  --color-text: white;
-}
+  [theme="dark"] {
+    --color-primary: #0c121c;
+    --color-background: linear-gradient(
+      to right top,
+      #0c121c,
+      #0b1320,
+      #0a1424,
+      #091528,
+      #07162c
+    );
+    --color-text: white;
+  }
 
-[theme="light"] {
-  --color-primary: #cad2e0;
-  --color-background: linear-gradient(
-    to right top,
-    #cad2e0,
-    #d3dae8,
-    #dbe3ef,
-    #e4ebf7,
-    #edf4ff
-  );
-  --color-text: black;
-}
+  [theme="light"] {
+    --color-primary: #cad2e0;
+    --color-background: linear-gradient(
+      to right top,
+      #cad2e0,
+      #d3dae8,
+      #dbe3ef,
+      #e4ebf7,
+      #edf4ff
+    );
+    --color-text: black;
+  }
 
-/* THEME IDEAS:  */
-/* https://www.tints.dev/sky/0C2446 */
+  #indexHero {
+    background-image: linear-gradient(
+      to right top,
+      #0c121c,
+      #0b132088,
+      #0a142400,
+      #09152885,
+      #07162c
+    ), url(../assets/crowd.jpg);
+  
+  }
+
+  /* THEME IDEAS:  */
+  /* https://www.tints.dev/sky/0C2446 */

@@ -4,20 +4,20 @@ export const Index = () => {
   return (
     <>
       {/* Hero */}
-      <section className="bg-primary min-h-screen h-fit flex justify-center items-center drop-shadow-md py-16">
+      <section id="indexHero" className="bg-primary min-h-screen h-fit flex justify-center items-center drop-shadow-md py-16">
         <div className="flex flex-col justify-center items-center w-full h-full px-8 gap-12">
           <img src={Logo} alt="Fanthropy Logo" className="w-full h-full md:w-3/4 md:h-3/4 lg:w-2xl lg:h-2xl" />
           <h3 className="text-5xl md:text-6xl pb-24 font-semibold">
             Volunteer for your community and earn big rewards
           </h3>
-          <div className="flex flex-row justify-center items-center gap-4 pb-24">
-            <button className="p-2 px-3 rounded-full bg-text/15 cursor-pointer hover:bg-text/25 transition-all ease-in-out">
+          <div className="flex flex-row justify-center items-center gap-4 pb-24 flex-wrap">
+            <button className="text-xl p-2 px-3 rounded-full bg-text/45 cursor-pointer hover:bg-text/55 transition-all ease-in-out">
               Learn More
             </button>
-            <button className="p-2 px-3 rounded-full bg-text/15 cursor-pointer hover:bg-text/25 transition-all ease-in-out">
+            <button className="text-xl p-2 px-3 rounded-full bg-text/45 cursor-pointer hover:bg-text/55 transition-all ease-in-out">
               Sign Up
             </button>
-            <button className="p-2 px-3 rounded-full bg-text/15 cursor-pointer hover:bg-text/25 transition-all ease-in-out">
+            <button className="text-xl p-2 px-3 rounded-full bg-text/45 cursor-pointer hover:bg-text/55 transition-all ease-in-out">
               Organizer? Click Here
             </button>
           </div>

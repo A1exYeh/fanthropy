@@ -1,3 +1,5 @@
+import { Link } from "react-router";
+
 export const Footer = () => {
   return (
     <>
@@ -6,13 +8,10 @@ export const Footer = () => {
           <div>
             <ul>
               <li>
-                <a href="/">HOME</a>
+                <Link to="/">HOME</Link>
               </li>
               <li>
-                <a href="/about">ABOUT</a>
-              </li>
-              <li>
-                <a href="/">FAQ</a>
+                <Link to="/about">ABOUT</Link>
               </li>
             </ul>
           </div>
