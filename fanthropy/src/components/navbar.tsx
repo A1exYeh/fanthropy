@@ -10,11 +10,11 @@ export const Navbar = () => {
       <div className="w-full flex  justify-center items-center bg-primary/35 text-text backdrop-blur-sm drop-shadow-sm fixed top-0 z-10">
         {stackOpen == false ? (
           <div className="w-full text-sm max-w-screen-xl flex flex-row items-center justify-end gap-6 font-medium flex-wrap">
-            <a href="/" className="mr-auto h-24 w-24">
+            <Link to="/" className="mr-auto h-24 w-24">
               <img src={Logo} alt="Logo" />
-            </a>
+            </Link>
             <div className="hidden md:flex flex-row items-center justify-end gap-6 px-4">
-              <a href="/about">ABOUT</a>
+            <Link to="/about">About</Link>
               {/* <ThemeSwitcher /> */}
               <button className="p-2 bg-yellow-500 font-bold cursor-pointer rounded-xl">
                 <a href="https://www.canva.com/design/DAGfY1k2nes/VwNQskkZhlUsbALFzODImw/view?mode=prototype" target="_blank" rel="noreferrer nopener">DEMO</a>
@@ -38,8 +38,8 @@ export const Navbar = () => {
             <a href="">FAQ</a>
             {/* <ThemeSwitcher /> */}
             <button className="p-2 bg-yellow-500 font-bold cursor-pointer rounded-xl">
-              DEMO
-            </button>
+                <a href="https://www.canva.com/design/DAGfY1k2nes/VwNQskkZhlUsbALFzODImw/view?mode=prototype" target="_blank" rel="noreferrer nopener">DEMO</a>
+              </button>
             <button
               onClick={() => {
                 setStackOpen(!stackOpen);
