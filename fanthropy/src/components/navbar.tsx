@@ -35,7 +35,7 @@ export const Navbar = () => {
               <img src={Logo} alt="Logo" />
             </Link>
             <Link to="/about">About</Link>
-            <a href="">FAQ</a>
+  
             {/* <ThemeSwitcher /> */}
             <button className="p-2 bg-yellow-500 font-bold cursor-pointer rounded-xl">
                 <a href="https://www.canva.com/design/DAGfY1k2nes/VwNQskkZhlUsbALFzODImw/view?mode=prototype" target="_blank" rel="noreferrer nopener">DEMO</a>
